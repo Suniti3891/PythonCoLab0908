@@ -1,0 +1,1135 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "collapsed_sections": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#**Python Data Type - Tuple Inbuilt Functions**"
+      ],
+      "metadata": {
+        "id": "plAFDNPheFAj"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 3,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "v53voGfceDe7",
+        "outputId": "fa7bd337-9ea1-48d6-c55c-b3dade2fca65"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "('a', 'b', 'c', 'd', 'e', 1, 2, 3, 4, 5, 'a', 'b', 'c', 'd', 'a', 'b', 'c', 'a', 'b')\n"
+          ]
+        }
+      ],
+      "source": [
+        "tup1 = ('a','b','c','d','e',1,2,3,4,5,'a','b','c','d','a','b','c','a','b')\n",
+        "print(tup1)"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Return number of occurrences of value."
+      ],
+      "metadata": {
+        "id": "PHMUBQGvfvVy"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "tup1.count('a')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "VHj0Xp0KfqhL",
+        "outputId": "4d43d17c-e87e-416b-b299-65ab82c9748e"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "4"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 4
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Return first index of value.\n",
+        "\n",
+        "Raises ValueError if the value is not present."
+      ],
+      "metadata": {
+        "id": "eWdFNiymgFJa"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "tup1.index(1)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "BdvWCbwHf8j5",
+        "outputId": "a76641b0-7a1b-4afb-cb43-076fe51673ad"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "5"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 5
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#**Python Data Type - Set Inbuilt Functions**"
+      ],
+      "metadata": {
+        "id": "WlTfL8hggL1p"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "set1 = {0,1,2,3,4,5,'a','b','c','d','e',True,False,1,2,3,4,'Mon',\"Tues\",1,2,3}\n",
+        "set1"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "eVkWa4IQgJLy",
+        "outputId": "fc9cbf75-d6dc-4039-b556-ed74d67ee94b"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "{0, 1, 2, 3, 4, 5, 'Mon', 'Tues', 'a', 'b', 'c', 'd', 'e'}"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 6
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "set1.add(\"Python\")\n",
+        "set1"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "yCLKuWBXgoUh",
+        "outputId": "37523e0d-62c1-429c-8cba-e777c18715bb"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "{0, 1, 2, 3, 4, 5, 'Mon', 'Python', 'Tues', 'a', 'b', 'c', 'd', 'e'}"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 7
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "set1.clear()\n",
+        "set1"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "N_nbM3C0gvDB",
+        "outputId": "6f846cdd-17b6-44b3-dbcd-2ff8cd190a0b"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "set()"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 8
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# If the element is not a member, do nothing."
+      ],
+      "metadata": {
+        "id": "3ffqAtzJhCiL"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "set1 = {0,1,2,3,4,5,'a','b','c','d','e',True,False,1,2,3,4,'Mon',\"Tues\",1,2,3,'Python'}\n",
+        "set1.discard('e')\n",
+        "set1"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "jmLAYhmOg2bR",
+        "outputId": "435f7041-85e5-4296-8231-8149f43e0b76"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "{0, 1, 2, 3, 4, 5, 'Mon', 'Python', 'Tues', 'a', 'b', 'c', 'd'}"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 10
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Remove and return an arbitrary set element.\n",
+        "\n",
+        "Raises KeyError if the set is empty."
+      ],
+      "metadata": {
+        "id": "gJMDIFAjhVZd"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "set1 = {0,1,2,3,4,5,'a','b','c','d','e',True,False,1,2,3,4,'Mon',\"Tues\",1,2,3,'Python'}\n",
+        "set1.pop()\n",
+        "print(set1)\n",
+        "set1.pop()\n",
+        "print(set1)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ARqSqkvphI3j",
+        "outputId": "d6c7fecc-5679-4cae-ed9b-ff4c346d5d15"
+      },
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{1, 2, 3, 4, 5, 'd', 'Tues', 'Mon', 'c', 'e', 'b', 'a', 'Python'}\n",
+            "{2, 3, 4, 5, 'd', 'Tues', 'Mon', 'c', 'e', 'b', 'a', 'Python'}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Remove an element from a set; it must be a member.\n",
+        "\n",
+        "If the element is not a member, raise a KeyError."
+      ],
+      "metadata": {
+        "id": "SeHfM16ah1pj"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "set1 = {0,1,2,3,4,5,'a','b','c','d','e',True,False,1,2,3,4,'Mon',\"Tues\",1,2,3,'Python'}\n",
+        "set1.remove('Tues')\n",
+        "set1"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "fHCgiWWahXod",
+        "outputId": "c26a4fe7-a786-41d3-e777-875b3c2ac522"
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "{0, 1, 2, 3, 4, 5, 'Mon', 'Python', 'a', 'b', 'c', 'd', 'e'}"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 14
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "set2 = {1,2,3,4,5,'a','b','c','d','e'}\n",
+        "set3 = {4,5,6,7,8,'d','e','f','g','h'}\n",
+        "set2.difference(set3)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "fWfv4Redh73C",
+        "outputId": "dcd324a7-1ede-438c-a1fa-8bc16a13d47c"
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "{1, 2, 3, 'a', 'b', 'c'}"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 16
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "set2 = {1,2,3,4,5,'a','b','c','d','e'}\n",
+        "set3 = {4,5,6,7,8,'d','e','f','g','h'}\n",
+        "set3.difference(set2)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "s1C5LY1Uiis_",
+        "outputId": "bbb02504-e2ac-4fcb-86d3-913852bb279a"
+      },
+      "execution_count": 17,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "{6, 7, 8, 'f', 'g', 'h'}"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 17
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "set2 = {1,2,3,4,5,'a','b','c','d','e'}\n",
+        "set3 = {4,5,6,7,8,'d','e','f','g','h'}\n",
+        "set2.difference_update(set3)\n",
+        "print(set2, set3)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ZZ9ExaSlilPA",
+        "outputId": "d0b965ee-22b9-478f-98bb-2957963948fc"
+      },
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{1, 2, 3, 'c', 'b', 'a'} {'d', 4, 5, 6, 7, 8, 'g', 'e', 'f', 'h'}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "set2 = {1,2,3,4,5,'a','b','c','d','e'}\n",
+        "set3 = {4,5,6,7,8,'d','e','f','g','h'}\n",
+        "set3.difference_update(set2)\n",
+        "print(set2, set3)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ytOZwx0jivQ3",
+        "outputId": "25512f81-130b-44e1-c1e4-2bcb081ed206"
+      },
+      "execution_count": 19,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{1, 2, 3, 4, 5, 'd', 'c', 'e', 'b', 'a'} {6, 7, 8, 'g', 'f', 'h'}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "set2 = {1,2,3,4,5,'a','b','c','d','e'}\n",
+        "set3 = {4,5,6,7,8,'d','e','f','g','h'}\n",
+        "set2.intersection(set3)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "_bFtfmDPi19v",
+        "outputId": "03ce501b-304c-423a-83f2-b75c8d70a516"
+      },
+      "execution_count": 20,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "{4, 5, 'd', 'e'}"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 20
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "set2 = {1,2,3,4,5,'a','b','c','d','e'}\n",
+        "set3 = {4,5,6,7,8,'d','e','f','g','h'}\n",
+        "set3.intersection(set2)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "cVFiLItsi9gI",
+        "outputId": "76f1e6a3-fbab-40e3-ca98-ec6c83ebc58b"
+      },
+      "execution_count": 21,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "{4, 5, 'd', 'e'}"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 21
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "set2 = {1,2,3,4,5,'a','b','c','d','e'}\n",
+        "set3 = {4,5,6,7,8,'d','e','f','g','h'}\n",
+        "set2.intersection_update(set3)\n",
+        "print(set2, set3)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "R1zk5BiCi_tY",
+        "outputId": "3beb619b-a7e6-4baf-fbb3-a4a7a0897d27"
+      },
+      "execution_count": 22,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{'d', 'e', 4, 5} {'d', 4, 5, 6, 7, 8, 'g', 'e', 'f', 'h'}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "set2 = {1,2,3,4,5,'a','b','c','d','e'}\n",
+        "set3 = {4,5,6,7,8,'d','e','f','g','h'}\n",
+        "set3.intersection_update(set2)\n",
+        "print(set2, set3)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "6lpaTQLkjHJD",
+        "outputId": "5f83727c-ee4f-4996-b8b9-bec31cfd3398"
+      },
+      "execution_count": 23,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{1, 2, 3, 4, 5, 'd', 'c', 'e', 'b', 'a'} {'d', 'e', 4, 5}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "set2 = {1,2,3,4,5,'a','b','c','d','e'}\n",
+        "set3 = {4,5,6,7,8,'d','e','f','g','h'}\n",
+        "set2.symmetric_difference(set3)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "qi6XsWSnjPn3",
+        "outputId": "1d0695da-abf8-49cd-fcd5-de90d0c933c6"
+      },
+      "execution_count": 24,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "{1, 2, 3, 6, 7, 8, 'a', 'b', 'c', 'f', 'g', 'h'}"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 24
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "set2 = {1,2,3,4,5,'a','b','c','d','e'}\n",
+        "set3 = {4,5,6,7,8,'d','e','f','g','h'}\n",
+        "set3.symmetric_difference(set2)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "KSVr1xL7jX1Y",
+        "outputId": "1aec41ef-1524-4cd2-d820-7237d12e6052"
+      },
+      "execution_count": 25,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "{1, 2, 3, 6, 7, 8, 'a', 'b', 'c', 'f', 'g', 'h'}"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 25
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "set2 = {1,2,3,4,5,'a','b','c','d','e'}\n",
+        "set3 = {4,5,6,7,8,'d','e','f','g','h'}\n",
+        "set2.symmetric_difference_update(set3)\n",
+        "print(set2, set3)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "V8s10x_jjeLI",
+        "outputId": "bbef917c-5a9b-45d2-acd9-58b874e62cc5"
+      },
+      "execution_count": 26,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{1, 2, 3, 6, 7, 8, 'g', 'c', 'f', 'b', 'h', 'a'} {'d', 4, 5, 6, 7, 8, 'g', 'e', 'f', 'h'}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "set2 = {1,2,3,4,5,'a','b','c','d','e'}\n",
+        "set3 = {4,5,6,7,8,'d','e','f','g','h'}\n",
+        "set3.symmetric_difference_update(set2)\n",
+        "print(set2, set3)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "7wD4y0Zdjl7H",
+        "outputId": "d541902b-5a25-4ac8-c996-987784e7c710"
+      },
+      "execution_count": 27,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{1, 2, 3, 4, 5, 'd', 'c', 'e', 'b', 'a'} {1, 2, 6, 7, 8, 3, 'g', 'c', 'f', 'h', 'b', 'a'}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Return True if two sets have a null intersection."
+      ],
+      "metadata": {
+        "id": "JUNi-eZfjyL5"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "set2 = {1,2,3,4,5,'a','b','c','d','e'}\n",
+        "set3 = {4,5,6,7,8,'d','e','f','g','h'}\n",
+        "set2.isdisjoint(set3)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "WFYdB1vRjqe3",
+        "outputId": "26c17ae4-9f50-4125-c6bd-3062baa6f009"
+      },
+      "execution_count": 28,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "False"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 28
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Report whether another set contains this set."
+      ],
+      "metadata": {
+        "id": "xeyjqLT3j897"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "set2 = {4,5,'d','e'}\n",
+        "set3 = {4,5,6,7,8,'d','e','f','g','h'}\n",
+        "set2.issubset(set3)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ewXp3Y7_kRuY",
+        "outputId": "5014f022-e289-457e-d2d2-5dbff437cb37"
+      },
+      "execution_count": 34,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "True"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 34
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "set2 = {1,2,3,4,5,'a','b','c','d','e'}\n",
+        "set3 = {4,5,'d','e'}\n",
+        "set3.issubset(set2)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "9GDQMqS9j1Q5",
+        "outputId": "d0a0d5a9-ad99-440d-9959-5ed626144b05"
+      },
+      "execution_count": 33,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "True"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 33
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "set2 = {1,2,3,4,5,'a','b','c','d','e'}\n",
+        "set3 = {4,5,'d','e'}\n",
+        "set2.issuperset(set3)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "oLeyIjUikbR3",
+        "outputId": "6db98bba-90b6-46d8-ffa1-d8b4b87f92a1"
+      },
+      "execution_count": 35,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "True"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 35
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "set2 = {4,5,'d','e'}\n",
+        "set3 = {4,5,6,7,8,'d','e','f','g','h'}\n",
+        "set3.issuperset(set2)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "g612svJzklsh",
+        "outputId": "81b18210-9bfe-4888-db9c-1a28a91f4ddf"
+      },
+      "execution_count": 37,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "True"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 37
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#**Python Data Type - Dictionary Inbuilt Functions**"
+      ],
+      "metadata": {
+        "id": "GkkU0-cek2cQ"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "dict1 = {'mon':'monday','tue':'tuesday','wed':'wednesday','Thur':'Thursday'}\n",
+        "dict1"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ShDyFavKkwlf",
+        "outputId": "081d5ecc-5890-456f-feff-96bfaec499ad"
+      },
+      "execution_count": 38,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "{'mon': 'monday', 'tue': 'tuesday', 'wed': 'wednesday', 'Thur': 'Thursday'}"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 38
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "dict1.clear()\n",
+        "dict1"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "hWry4I4glODv",
+        "outputId": "757f631f-53bc-438c-da51-7c3924e659ba"
+      },
+      "execution_count": 39,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "{}"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 39
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "dict1 = {'mon':'monday','tue':'tuesday','wed':'wednesday','Thur':'Thursday'}\n",
+        "dict_cp = dict1.copy()\n",
+        "print(dict1, dict_cp)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "jFNq_BOclWUu",
+        "outputId": "40c62ab1-48d8-49ac-8a3a-e21ea2d614dc"
+      },
+      "execution_count": 40,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{'mon': 'monday', 'tue': 'tuesday', 'wed': 'wednesday', 'Thur': 'Thursday'} {'mon': 'monday', 'tue': 'tuesday', 'wed': 'wednesday', 'Thur': 'Thursday'}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "dict1 = {'mon':'monday','tue':'tuesday','wed':'wednesday','Thur':'Thursday'}\n",
+        "x = ['a','b','c','d']\n",
+        "y = 10\n",
+        "\n",
+        "dict2 = dict1.fromkeys(x,y)\n",
+        "print(dict2)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Gh8WcnHQlgjQ",
+        "outputId": "335ba98e-57d4-4ab2-d0cf-267bc10025cc"
+      },
+      "execution_count": 41,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{'a': 10, 'b': 10, 'c': 10, 'd': 10}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "dict1 = {'mon':'monday','tue':'tuesday','wed':'wednesday','Thur':'Thursday'}\n",
+        "dict1.get('mon')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 36
+        },
+        "id": "FHptrE39lw7d",
+        "outputId": "42d75a60-36b8-49f4-fb9a-dcff0f72c26f"
+      },
+      "execution_count": 42,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'monday'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 42
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "dict1 = {'mon':'monday','tue':'tuesday','wed':'wednesday','Thur':'Thursday'}\n",
+        "dict1.items()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "JSHAdlaLl847",
+        "outputId": "f519cfa0-7b9c-4aa5-83a2-03c6ad5a1558"
+      },
+      "execution_count": 43,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "dict_items([('mon', 'monday'), ('tue', 'tuesday'), ('wed', 'wednesday'), ('Thur', 'Thursday')])"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 43
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "dict1 = {'mon':'monday','tue':'tuesday','wed':'wednesday','Thur':'Thursday'}\n",
+        "dict1.keys()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "vcoBrRXMmA_r",
+        "outputId": "964bcc03-fe21-4cb9-9a7b-f205dfc53472"
+      },
+      "execution_count": 44,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "dict_keys(['mon', 'tue', 'wed', 'Thur'])"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 44
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "dict1 = {'mon':'monday','tue':'tuesday','wed':'wednesday','Thur':'Thursday'}\n",
+        "dict1.pop('mon')\n",
+        "dict1"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "rvMFI6ivmFvA",
+        "outputId": "6f0ddacc-c295-4a1a-e1ab-796012978f06"
+      },
+      "execution_count": 47,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "{'tue': 'tuesday', 'wed': 'wednesday', 'Thur': 'Thursday'}"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 47
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "dict1 = {'mon':'monday','tue':'tuesday','wed':'wednesday','Thur':'Thursday'}\n",
+        "x = dict1.popitem()\n",
+        "print(x)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "RdOROsG_m54n",
+        "outputId": "2a10ba5b-1041-49d8-9158-c264e2df78cc"
+      },
+      "execution_count": 50,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "('Thur', 'Thursday')\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Insert key with a value of default if key is not in the dictionary.\n",
+        "\n",
+        "Return the value for key if key is in the dictionary, else default."
+      ],
+      "metadata": {
+        "id": "dmthOJ_infl_"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "dict1 = {'mon':'monday','tue':'tuesday','wed':'wednesday','thur':'thursday'}\n",
+        "dict1.setdefault( '','friday')\n",
+        "dict1"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ujkioAlQnUnO",
+        "outputId": "3b12b1ef-0750-4644-e95b-15536b64c215"
+      },
+      "execution_count": 53,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "{'mon': 'monday',\n",
+              " 'tue': 'tuesday',\n",
+              " 'wed': 'wednesday',\n",
+              " 'thur': 'thursday',\n",
+              " '': 'friday'}"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 53
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "dict1 = {'mon':'monday','tue':'tuesday','wed':'wednesday','thur':'thursday'}\n",
+        "dict1.values()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "2kf9K3Btni3-",
+        "outputId": "cc9a7747-1510-4617-969a-930ec088934f"
+      },
+      "execution_count": 54,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "dict_values(['monday', 'tuesday', 'wednesday', 'thursday'])"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 54
+        }
+      ]
+    }
+  ]
+}

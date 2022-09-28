@@ -1,0 +1,2798 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "collapsed_sections": [
+        "cy6AhDpIXKt3"
+      ]
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Python String Data Type - Inbuilt Functions"
+      ],
+      "metadata": {
+        "id": "aKKY58-lfpVj"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "hlezqxT9fStF"
+      },
+      "outputs": [],
+      "source": [
+        "var_str = \"Python Programming\""
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# capitalize() -> str\n",
+        "\n",
+        "Return a capitalized version of the string.\n",
+        "\n",
+        "More specifically, make the first character have upper case and the rest lower case."
+      ],
+      "metadata": {
+        "id": "_WJWr0Z4grtg"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var_str = \"python programming\"\n",
+        "var_str.capitalize()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "id": "R-ysdzPlgTPM",
+        "outputId": "a752cd60-0c45-4b09-9dff-a361d520ea9f"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            },
+            "text/plain": [
+              "'Python programming'"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 2
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# casefold() -> str\n",
+        "\n",
+        "Return a version of the string suitable for caseless comparisons."
+      ],
+      "metadata": {
+        "id": "8SUSeDtVhcx9"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var_str = \"PYTHON PROGRAMMING\"\n",
+        "var_str.casefold()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "id": "PpQNChNvgj8q",
+        "outputId": "c4b77b14-73aa-4db3-d069-c1a7fd788492"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            },
+            "text/plain": [
+              "'python programming'"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 3
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# center(__width: SupportsIndex, __fillchar: str = ...) -> str\n",
+        "\n",
+        "Return a centered string of length width.\n",
+        "\n",
+        "Padding is done using the specified fill character (default is a space).\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "bGv0ACgohvlb"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(var_str.center(25))\n",
+        "print(var_str.center(50))\n",
+        "print(var_str.center(75))\n",
+        "print(var_str.center(100))\n",
+        "print(var_str.center(25, '*'))\n",
+        "print(var_str.center(50, '#'))\n",
+        "print(var_str.center(75, '$'))\n",
+        "print(var_str.center(100, '@'))\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "YEXDBIdDhn-n",
+        "outputId": "a8c6a94c-02ae-41a3-e06f-a444d6fa16ac"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "    PYTHON PROGRAMMING   \n",
+            "                PYTHON PROGRAMMING                \n",
+            "                             PYTHON PROGRAMMING                            \n",
+            "                                         PYTHON PROGRAMMING                                         \n",
+            "****PYTHON PROGRAMMING***\n",
+            "################PYTHON PROGRAMMING################\n",
+            "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$PYTHON PROGRAMMING$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n",
+            "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@PYTHON PROGRAMMING@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# count(x: str, __start: SupportsIndex | None = ..., __end: SupportsIndex | None = ...) -> int\n",
+        "S.count(sub[, start[, end]]) -> int\n",
+        "\n",
+        "Return the number of non-overlapping occurrences of substring sub in\n",
+        "string S[start:end].  \n",
+        "\n",
+        "Optional arguments start and end are\n",
+        "interpreted as in slice notation."
+      ],
+      "metadata": {
+        "id": "lP_k_gCNiv_l"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var_str = \"Peppa pig personal likes Python Programming\"\n",
+        "print(var_str.count('p'))\n",
+        "print(var_str.count('a'))\n",
+        "print(var_str.count('e'))\n",
+        "print(var_str.count('P'))\n",
+        "print(var_str.count('p',0,5))\n",
+        "print(var_str.count('p',0,11))\n",
+        "print(var_str.count('p',5,11))\n",
+        "print(var_str.count('p',11,len(var_str)))\n",
+        "print(var_str.count('a',20,len(var_str)))\n",
+        "print(var_str.count('e',9,len(var_str)))\n",
+        "print(var_str.count('P',25,len(var_str)))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "BLaq_As_ii6_",
+        "outputId": "5acb28f0-617f-4b69-8dca-a80a0c34aa14"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "4\n",
+            "3\n",
+            "3\n",
+            "3\n",
+            "2\n",
+            "4\n",
+            "2\n",
+            "0\n",
+            "1\n",
+            "2\n",
+            "2\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "(encoding: str = ..., errors: str = ...) -> bytes\n",
+        "Encode the string using the codec registered for encoding.\n",
+        "\n",
+        "encoding\n",
+        "  The encoding in which to encode the string.\n",
+        "errors\n",
+        "  The error handling scheme to use for encoding errors.\n",
+        "The default is 'strict' meaning that encoding errors raise a\n",
+        "UnicodeEncodeError.  Other possible values are 'ignore', 'replace' and\n",
+        "'xmlcharrefreplace' as well as any other name registered with\n",
+        "codecs.register_error that can handle UnicodeEncodeErrors.\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "qFDC7QKB0Q4y"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var_str = \"®îţũ\"\n",
+        "print(var_str.encode())\n",
+        "var_str = \"ΡγͲπδή\"\n",
+        "print(var_str.encode())\n",
+        "var_str = \"ϖɵʁķ\"\n",
+        "print(var_str.encode())\n",
+        "var_str = \"ĉŭƽƶƂŝĦ\"\n",
+        "print(var_str.encode())"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "cUIjjXvU0AD4",
+        "outputId": "e4c11aef-232b-4316-8b1d-5b3264f4bc03"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "b'\\xc2\\xae\\xc3\\xae\\xc5\\xa3\\xc5\\xa9'\n",
+            "b'\\xce\\xa1\\xce\\xb3\\xcd\\xb2\\xcf\\x80\\xce\\xb4\\xce\\xae'\n",
+            "b'\\xcf\\x96\\xc9\\xb5\\xca\\x81\\xc4\\xb7'\n",
+            "b'\\xc4\\x89\\xc5\\xad\\xc6\\xbd\\xc6\\xb6\\xc6\\x82\\xc5\\x9d\\xc4\\xa6'\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# endswith(__suffix: str | Tuple[str, ...], __start: SupportsIndex | None = ..., __end: SupportsIndex | None = ...) -> bool\n",
+        "S.endswith(suffix[, start[, end]]) -> bool\n",
+        "\n",
+        "Return True if S ends with the specified suffix, False otherwise.\n",
+        "With optional start, test S beginning at that position.\n",
+        "With optional end, stop comparing S at that position.\n",
+        "suffix can also be a tuple of strings to try."
+      ],
+      "metadata": {
+        "id": "x_U_rN6m4XnG"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var_str = \"Python Programming\"\n",
+        "print(var_str.endswith(\"g\"))\n",
+        "var_str = \"Python Programming\"\n",
+        "print(var_str.endswith(\"G\"))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "_GIWxJ9u39Gp",
+        "outputId": "12969ac7-f89b-4dce-91d0-653f32a76e7d"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "True\n",
+            "False\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "expandtabs(tabsize: SupportsIndex = ...) -> str\n",
+        "Return a copy where all tab characters are expanded using spaces.\n",
+        "\n",
+        "If tabsize is not given, a tab size of 8 characters is assumed.\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "Y2iH56vd4sVE"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var_str = \"p\\ty\\tt\\th\\to\\tn\"\n",
+        "print(var_str.expandtabs())\n",
+        "print(var_str.expandtabs(10))\n",
+        "print(var_str.expandtabs(20))\n",
+        "print(var_str.expandtabs(30))\n",
+        "print(var_str.expandtabs(40))\n",
+        "print(var_str.expandtabs(50))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "aC2rIDtM4hG8",
+        "outputId": "a77d1681-c5b2-4e50-902f-0046474ef4be"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "p       y       t       h       o       n\n",
+            "p         y         t         h         o         n\n",
+            "p                   y                   t                   h                   o                   n\n",
+            "p                             y                             t                             h                             o                             n\n",
+            "p                                       y                                       t                                       h                                       o                                       n\n",
+            "p                                                 y                                                 t                                                 h                                                 o                                                 n\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# find(__sub: str, __start: SupportsIndex | None = ..., __end: SupportsIndex | None = ...) -> int\n",
+        "S.find(sub[, start[, end]]) -> int\n",
+        "\n",
+        "Return the lowest index in S where substring sub is found,\n",
+        "such that sub is contained within S[start:end].  Optional\n",
+        "arguments start and end are interpreted as in slice notation.\n",
+        "\n",
+        "Return -1 on failure.\n",
+        "\n",
+        "0\n"
+      ],
+      "metadata": {
+        "id": "kMAacGzL5w4G"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var_str =\"python\"\n",
+        "print(var_str.find(\"p\"))\n",
+        "print(var_str.find(\"y\"))\n",
+        "print(var_str.find(\"t\"))\n",
+        "print(var_str.find(\"h\"))\n",
+        "print(var_str.find(\"o\"))\n",
+        "print(var_str.find(\"n\"))\n",
+        "print(var_str.find(\"p\",2,5))\n",
+        "print(var_str.find(\"p\",1,5))\n",
+        "print(var_str.find(\"p\",0,5))\n",
+        "print(var_str.find(\"y\",3,5))\n",
+        "print(var_str.find(\"y\",2,5))\n",
+        "print(var_str.find(\"y\",1,5))\n",
+        "print(var_str.find(\"t\",4,5))\n",
+        "print(var_str.find(\"t\",3,5))\n",
+        "print(var_str.find(\"t\",2,5))\n",
+        "print(var_str.find(\"h\",5,5))\n",
+        "print(var_str.find(\"h\",4,5))\n",
+        "print(var_str.find(\"h\",3,5))\n",
+        "print(var_str.find(\"o\",5,5))\n",
+        "print(var_str.find(\"o\",4,5))\n",
+        "print(var_str.find(\"n\",0,5))\n",
+        "print(var_str.find(\"n\",0,6))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Nn_fW_ar5efh",
+        "outputId": "c6ff0d60-a979-44f8-e517-c0aae98d0344"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "0\n",
+            "1\n",
+            "2\n",
+            "3\n",
+            "4\n",
+            "5\n",
+            "-1\n",
+            "-1\n",
+            "0\n",
+            "-1\n",
+            "-1\n",
+            "1\n",
+            "-1\n",
+            "-1\n",
+            "2\n",
+            "-1\n",
+            "-1\n",
+            "3\n",
+            "-1\n",
+            "4\n",
+            "-1\n",
+            "5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# format.(*args: object, **kwargs: object) -> str\n",
+        "S.format(*args, **kwargs) -> str\n",
+        "\n",
+        "Return a formatted version of S, using substitutions from args and kwargs.\n",
+        "The substitutions are identified by braces ('{' and '}').\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "fU8EfvN-Ed5A"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "txt = \"Selling price of product is {price:.2f} rupees\"\n",
+        "print(txt.format(price = 77))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "QKD3RcK5_ORI",
+        "outputId": "3dba0a95-4e82-426a-c21e-2d006e7e997c"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Selling price of product is 77.00 rupees\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "txt1 = \"My name is {fname}, I'm {age}.\".format(fname = \"Prajakta\", age = 29)\n",
+        "txt2 = \"My name is {0}, I'm {1}.\".format(\"Prajakta\",29)\n",
+        "txt3 = \"My name is {}, I'm {}.\".format(\"Prajakta\",29)\n",
+        "print(txt1,'\\n',txt2,'\\n',txt3)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "rtiieEH0Etz9",
+        "outputId": "46b67673-21c3-4cb6-e3f5-1e1eef39a733"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "My name is Prajakta, I'm 29. \n",
+            " My name is Prajakta, I'm 29. \n",
+            " My name is Prajakta, I'm 29.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "pledge = \"India is my {}, and all {} are my {} and {}. I {} my {} very much.\".format(\"country\",\"Indians\",\"brothers\",\"sisters\",\"love\",\"country\")\n",
+        "print(pledge)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Zvqa9dP9MXRY",
+        "outputId": "5e712568-c56b-460c-c9f9-02d31f7cd613"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "India is my country, and all Indians are my brothers and sisters. I love my country very much.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"{}, pioneer in Data Science Training.\"\n",
+        "      .format(\"The DataLytics, Nagpur\"))\n",
+        " \n",
+        "str = \"This article is written in {}.\"\n",
+        "print(str.format(\"Python\"))\n",
+        " \n",
+        "print(\"Hello, I am {} years old !\".format(18))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "PV8AxnhlFcag",
+        "outputId": "3262f4ab-1256-4fcf-a7e1-fcf26a07aa4e"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "The DataLytics, Nagpur, pioneer in Data Science Training.\n",
+            "This article is written in Python.\n",
+            "Hello, I am 18 years old !\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"Every {0} should know the use of {1} {2} programming and {3}\"\n",
+        "      .format(\"programmer\", \"Open\", \"Source\", \"Operating Systems\"))\n",
+        "\n",
+        "print(\"Every {1} should know the use of {2} {3} programming and {0}\"\n",
+        "      .format(\"programmer\", \"Open\", \"Source\", \"Operating Systems\"))\n",
+        "\n",
+        "print(\"Every {2} should know the use of {3} {0} programming and {1}\"\n",
+        "      .format(\"programmer\", \"Open\", \"Source\", \"Operating Systems\"))\n",
+        "\n",
+        "print(\"Every {3} should know the use of {0} {1} programming and {2}\"\n",
+        "      .format(\"programmer\", \"Open\", \"Source\", \"Operating Systems\"))\n",
+        "\n",
+        "print(\"Every {3} should know the use of {2} {1} programming and {0}\"\n",
+        "      .format(\"programmer\", \"Open\", \"Source\", \"Operating Systems\"))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "GDFToaetNj5l",
+        "outputId": "6df2f26e-e60b-42b2-fa93-c843343d1bf0"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Every programmer should know the use of Open Source programming and Operating Systems\n",
+            "Every Open should know the use of Source Operating Systems programming and programmer\n",
+            "Every Source should know the use of Operating Systems programmer programming and Open\n",
+            "Every Operating Systems should know the use of programmer Open programming and Source\n",
+            "Every Operating Systems should know the use of Source Open programming and programmer\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = {'x':'Jack', 'y':'Jill'}\n",
+        "\n",
+        "# Use of format_map() function\n",
+        "print(\"{x} and {y} went up the hill.\".format_map(a))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "z8yriB-KNscX",
+        "outputId": "e8c3d091-66af-434e-853a-9121b9491ac6"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Jack and Jill went up the hill.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = {'p':\"programmer\", 'q':\"Open\", 'r':\"Source\", 's':\"Operating Systems\"}\n",
+        "print(\"Every {p} should know the use of {q} {r} programming and {s}.\".format_map(a))\n",
+        "\n",
+        "a = {'p':\"programmer\", 'q':\"Open\", 'r':\"Source\", 's':\"Operating Systems\"}\n",
+        "print(\"Every {q} should know the use of {r} {s} programming and {p}.\".format_map(a))\n",
+        "\n",
+        "a = {'p':\"programmer\", 'q':\"Open\", 'r':\"Source\", 's':\"Operating Systems\"}\n",
+        "print(\"Every {r} should know the use of {s} {p} programming and {q}.\".format_map(a))\n",
+        "\n",
+        "a = {'p':\"programmer\", 'q':\"Open\", 'r':\"Source\", 's':\"Operating Systems\"}\n",
+        "print(\"Every {s} should know the use of {p} {q} programming and {r}.\".format_map(a))\n",
+        "\n",
+        "a = {'p':\"programmer\", 'q':\"Open\", 'r':\"Source\", 's':\"Operating Systems\"}\n",
+        "print(\"Every {s} should know the use of {r} {q} programming and {p}\".format_map(a))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "uvdMvLROOPJF",
+        "outputId": "66ebb603-c9bf-478f-8ddb-b81c729567da"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Every programmer should know the use of Open Source programming and Operating Systems.\n",
+            "Every Open should know the use of Source Operating Systems programming and programmer.\n",
+            "Every Source should know the use of Operating Systems programmer programming and Open.\n",
+            "Every Operating Systems should know the use of programmer Open programming and Source.\n",
+            "Every Operating Systems should know the use of Source Open programming and programmer\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# index(__sub: str, __start: SupportsIndex | None = ..., __end: SupportsIndex | None = ...) -> int\n",
+        "S.index(sub[, start[, end]]) -> int\n",
+        "\n",
+        "Return the lowest index in S where substring sub is found, \n",
+        "such that sub is contained within S[start:end].  Optional\n",
+        "arguments start and end are interpreted as in slice notation.\n",
+        "\n",
+        "Raises ValueError when the substring is not found.\n",
+        "\n",
+        "0\n",
+        "1\n",
+        "2\n",
+        "3\n",
+        "4\n",
+        "5\n",
+        "7\n",
+        "1\n",
+        "2\n",
+        "3\n",
+        "9\n",
+        "16\n"
+      ],
+      "metadata": {
+        "id": "xS5goJomRtz6"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var_str = \"Python Programming\"\n",
+        "print(var_str.index(\"P\"))\n",
+        "print(var_str.index(\"y\"))\n",
+        "print(var_str.index(\"t\"))\n",
+        "print(var_str.index(\"h\"))\n",
+        "print(var_str.index(\"o\"))\n",
+        "print(var_str.index(\"n\"))\n",
+        "print(var_str.index(\"P\",7,len(var_str)))\n",
+        "print(var_str.index(\"y\",0,len(var_str)))\n",
+        "print(var_str.index(\"t\",0,len(var_str)))\n",
+        "print(var_str.index(\"h\",0,len(var_str)))\n",
+        "print(var_str.index(\"o\",7,len(var_str)))\n",
+        "print(var_str.index(\"n\",7,len(var_str)))"
+      ],
+      "metadata": {
+        "id": "r3jVyg3VQAd4",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "d2a64ae5-705f-4d15-a88b-093dbd800eae"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "0\n",
+            "1\n",
+            "2\n",
+            "3\n",
+            "4\n",
+            "5\n",
+            "7\n",
+            "1\n",
+            "2\n",
+            "3\n",
+            "9\n",
+            "16\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "![image.png](data:image/png;base64,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)"
+      ],
+      "metadata": {
+        "id": "25SNGZ09Scca"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "All above list of functions return boolean as output True or False."
+      ],
+      "metadata": {
+        "id": "LkFX16xZSf6e"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "isalnum() -> bool\n",
+        "Return True if the string is an alpha-numeric string, False otherwise.\n",
+        "\n",
+        "A string is alpha-numeric if all characters in the string are alpha-numeric and\n",
+        "there is at least one character in the string."
+      ],
+      "metadata": {
+        "id": "RhBa72xhS8FU"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var_str.isalnum()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "L7Q2hmcpRg9l",
+        "outputId": "dc6b1c89-9ff0-4835-edc1-2fd414df3484"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "False"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 18
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# isalpha() -> bool\n",
+        "Return True if the string is an alphabetic string, False otherwise.\n",
+        "\n",
+        "A string is alphabetic if all characters in the string are alphabetic and there\n",
+        "is at least one character in the string.\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "6VQMMllLTFIt"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var_str.isalpha()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "RYHckMGgS-zJ",
+        "outputId": "d6740caf-dd79-4b24-e920-028ae5c8e7dc"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "False"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 19
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# isalpha() -> bool\n",
+        "Return True if all characters in the string are ASCII, False otherwise.\n",
+        "\n",
+        "ASCII characters have code points in the range U+0000-U+007F.\n",
+        "Empty string is ASCII too."
+      ],
+      "metadata": {
+        "id": "DepupJLfTdbY"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var_str.isascii()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "gyHgJs_1TWzt",
+        "outputId": "a3e2572f-8bb5-4857-b8fa-467a5d4aed09"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "True"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 20
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# isdecimal() -> bool\n",
+        "Return True if the string is a decimal string, False otherwise.\n",
+        "\n",
+        "A string is a decimal string if all characters in the string are decimal and\n",
+        "there is at least one character in the string."
+      ],
+      "metadata": {
+        "id": "q0LzN0wWToJE"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var_str.isdecimal()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "mdkLhIm2Tgvr",
+        "outputId": "e44a395a-1a4e-4b26-ef10-9cfacefa77bb"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "False"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 21
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# isdigit() -> bool\n",
+        "Return True if the string is a digit string, False otherwise.\n",
+        "\n",
+        "A string is a digit string if all characters in the string are digits and there is at least one character in the string.\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "gk3rB0-aTzdj"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var_str.isdigit()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "n9ykLn_VTsDO",
+        "outputId": "e47e7b0a-8e28-4e33-a4c7-eb94368a66b8"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "False"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 22
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# isidentifier() -> bool\n",
+        "Return True if the string is a valid Python identifier, False otherwise.\n",
+        "\n",
+        "Use keyword.iskeyword() to test for reserved identifiers such as \"def\" and \"class\"."
+      ],
+      "metadata": {
+        "id": "oyQ0ag6PUBSH"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var_str.isidentifier()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "6l8g9cFtT36k",
+        "outputId": "1537e7a3-d762-4301-e734-a27c91d5e1f9"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "False"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 23
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# islower() -> bool\n",
+        "Return True if the string is a lowercase string, False otherwise.\n",
+        "\n",
+        "A string is lowercase if all cased characters in the string are lowercase and there is at least one cased character in the string.\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "9-poJdtJUOco"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var_str.islower()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "hzYzm9LqUHow",
+        "outputId": "450829a9-73bc-48df-83a6-6a98fb001b19"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "False"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 24
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# islower() -> bool\n",
+        "Return True if the string is a numeric string, False otherwise.\n",
+        "\n",
+        "A string is numeric if all characters in the string are numeric and there is at\n",
+        "least one character in the string."
+      ],
+      "metadata": {
+        "id": "S7qLt01MUa-Y"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var_str.isnumeric()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "1gf7g8e7USiN",
+        "outputId": "3323dfa8-632a-4a16-f263-78d25c966cd0"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "False"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 25
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# isnumeric() -> bool\n",
+        "Return True if the string is printable, False otherwise.\n",
+        "\n",
+        "A string is printable if all of its characters are considered printable in repr() or if it is empty."
+      ],
+      "metadata": {
+        "id": "S2TkjM6YUlcx"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var_str.isprintable()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "AswgtbX9UevO",
+        "outputId": "fb4673f8-4425-47da-c880-c36185b60a20"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "True"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 26
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# isspace() -> bool\n",
+        "Return True if the string is a whitespace string, False otherwise.\n",
+        "\n",
+        "A string is whitespace if all characters in the string are whitespace and there\n",
+        "is at least one character in the string."
+      ],
+      "metadata": {
+        "id": "wluBKvaGUzXT"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var_str.isspace()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Dn27w14KUpOY",
+        "outputId": "678e8819-5c09-4bf9-fb44-8873cbe53b5c"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "False"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 27
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# istitle() -> bool\n",
+        "Return True if the string is a title-cased string, False otherwise.\n",
+        "\n",
+        "In a title-cased string, upper- and title-case characters may only\n",
+        "follow uncased characters and lowercase characters only cased ones."
+      ],
+      "metadata": {
+        "id": "XrC4xWeIU-QH"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var_str.istitle()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "XQkmGFG0U3PD",
+        "outputId": "3eed2251-ece1-430b-9f2b-8a2ad52108da"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "True"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 28
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "() -> bool\n",
+        "Return True if the string is an uppercase string, False otherwise.\n",
+        "\n",
+        "A string is uppercase if all cased characters in the string are uppercase and\n",
+        "there is at least one cased character in the string."
+      ],
+      "metadata": {
+        "id": "7H-TjFQzVNXy"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var_str.isupper()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "8up2vWmWVDtm",
+        "outputId": "35bc0130-894a-41bc-8e01-9cba28d4dc94"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "False"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 29
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Remaining Inbuilt Function of Python String Data Type"
+      ],
+      "metadata": {
+        "id": "PUJVluy2FAzq"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var_str = \"Twinkle twinkle little star. How I wonder what you are.\"\n",
+        "print(var_str)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "3TmYMUwnFALy",
+        "outputId": "2282feef-fc57-4f58-c07e-40c0e7c2e416"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Twinkle twinkle little star. How I wonder what you are.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# join(__iterable: Iterable[str]) -> str\n",
+        "Concatenate any number of strings.\n",
+        "\n",
+        "The string whose method is called is inserted in between each given string.\n",
+        "The result is returned as a new string.\n",
+        "\n",
+        "Example: '.'.join(['ab', 'pq', 'rs']) -> 'ab.pq.rs'"
+      ],
+      "metadata": {
+        "id": "j0AOOKh-FrZy"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var_str = [\"Twinkle\", \"twinkle\", \"little\", \"star\"]\n",
+        "\"~\".join(var_str)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "id": "36v-pf5cFdWI",
+        "outputId": "644744e4-87a0-4dec-cce1-d638df2eeda4"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            },
+            "text/plain": [
+              "'Twinkle~twinkle~little~star'"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 31
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var_str = (\"Albert\", \"Pinto\", \"Ko\", \"Gussa\", \"Kyoon\", \"Aata\", \"Hai\")\n",
+        "\"^\".join(var_str)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "id": "3fjwqXCoHKIw",
+        "outputId": "f66eb0e3-d997-4689-edb1-9822cb84f309"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            },
+            "text/plain": [
+              "'Albert^Pinto^Ko^Gussa^Kyoon^Aata^Hai'"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 32
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var_str = \"Python Programming\"\n",
+        "\"-\".join(var_str)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "id": "kPp-1-lmHofa",
+        "outputId": "73aa988d-c1e4-462b-9988-078d18766cd1"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            },
+            "text/plain": [
+              "'P-y-t-h-o-n- -P-r-o-g-r-a-m-m-i-n-g'"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 33
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# ljust(__width: SupportsIndex, __fillchar: str = ...) -> str\n",
+        "Return a left-justified string of length width.\n",
+        "\n",
+        "Padding is done using the specified fill character (default is a space)."
+      ],
+      "metadata": {
+        "id": "GqQA3FfgIJm0"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var_str = \"Python Programming\"\n",
+        "x = var_str.ljust(18)\n",
+        "print(x, \"I love most.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "NeRG0bc6H5ct",
+        "outputId": "cd61fa17-9bfb-4296-fc8b-f037075214be"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Python Programming I love most.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var_str = \"Practice\"\n",
+        "x = var_str.ljust(8)\n",
+        "print(\"I wish to indulge\", x, \"Python\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "QvpPbWmVI0Tq",
+        "outputId": "e27d784d-565b-44be-91ef-ff226f3ec19b"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "I wish to indulge Practice Python\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# lower() -> str\n",
+        "\n",
+        "Return a copy of the string converted to lowercase."
+      ],
+      "metadata": {
+        "id": "Wk4nu0xsLC2Z"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var_str = \"PYTHON PROGRAMMING\"\n",
+        "var_str.lower()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "id": "-aWhwF1_JZSb",
+        "outputId": "32711172-f3ec-42f8-c2e3-4ea32257d92a"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            },
+            "text/plain": [
+              "'python programming'"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 36
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var_str = \"Python Programming\"\n",
+        "var_str.lower()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "id": "TNeKP7RcJxE_",
+        "outputId": "57fc94d7-0068-413f-9850-da944dc9d46f"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            },
+            "text/plain": [
+              "'python programming'"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 37
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# lstrip(__chars: str | None = ...) -> str\n",
+        "\n",
+        "Return a copy of the string with leading whitespace removed.\n",
+        "\n",
+        "If chars is given and not None, remove characters in chars instead.\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "nxnQ2IOELLfQ"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var_str = \"          Python Programming          \"\n",
+        "var_str.lstrip()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "id": "dxhQy7HyJ8I1",
+        "outputId": "fc0edb83-7f1a-4b10-a92e-426d43196a3d"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            },
+            "text/plain": [
+              "'Python Programming          '"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 38
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var_str = \"          Human          \"\n",
+        "var_str.lstrip()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "id": "6Kf89OlYKUfI",
+        "outputId": "b9deabba-f328-4864-c25f-c99de51b3aff"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            },
+            "text/plain": [
+              "'Human          '"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 39
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# translate(__table: Mapping[int, int | str | None] | Sequence[int | str | None]) -> str\n",
+        "Replace each character in the string using the given translation table.\n",
+        "\n",
+        "  table\n",
+        "    Translation table, which must be a mapping of Unicode ordinals to\n",
+        "Unicode ordinals, strings, or None.\n",
+        "\n",
+        "The table must implement lookup/indexing via __getitem__, for instance a\n",
+        "dictionary or list.  If this operation raises LookupError, the character is\n",
+        "left untouched.  Characters mapped to None are deleted."
+      ],
+      "metadata": {
+        "id": "1VM3aVO5M-_B"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "txt = \"Hello King\"\n",
+        "mytable = txt.maketrans(\"K\", \"S\")\n",
+        "print(txt.translate(mytable))"
+      ],
+      "metadata": {
+        "id": "n1m_Y-KrLik7",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "3d689f5a-a202-4c8b-c368-46d441459c16"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hello Sing\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var_str = \"Python Programming\"\n",
+        "maketr = var_str.maketrans(\"P\", \"C\")\n",
+        "print(var_str.translate(maketr))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "d68LdVTUNGbG",
+        "outputId": "70e1aae2-41a9-4474-ec65-c865c47c1edf"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Cython Crogramming\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# partition(__sep: str) -> Tuple[str, str, str]\n",
+        "Partition the string into three parts using the given separator.\n",
+        "\n",
+        "This will search for the separator in the string.  If the separator is found,\n",
+        "returns a 3-tuple containing the part before the separator, the separator\n",
+        "itself, and the part after it.\n",
+        "\n",
+        "If the separator is not found, returns a 3-tuple containing the original string\n",
+        "and two empty strings."
+      ],
+      "metadata": {
+        "id": "v6quyWAuRqVc"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "txt = \"Twinkle Twinkle Little Star\"\n",
+        "x = txt.partition(\"Twinkle\")\n",
+        "print(x)\n",
+        "x = txt.partition(\"Little\")\n",
+        "print(x)\n",
+        "x = txt.partition(\"Star\")\n",
+        "print(x)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "6VzD3jnqNulk",
+        "outputId": "abbab138-66fb-4f42-9944-a357c2a9824b"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "('', 'Twinkle', ' Twinkle Little Star')\n",
+            "('Twinkle Twinkle ', 'Little', ' Star')\n",
+            "('Twinkle Twinkle Little ', 'Star', '')\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# replace(__old: str, __new: str, __count: SupportsIndex = ...) -> str\n",
+        "Return a copy with all occurrences of substring old replaced by new.\n",
+        "\n",
+        "  count\n",
+        "    Maximum number of occurrences to replace.\n",
+        "-1 (the default value) means replace all occurrences.\n",
+        "\n",
+        "If the optional argument count is given, only the first count occurrences are\n",
+        "replaced."
+      ],
+      "metadata": {
+        "id": "6uNYmlkfSEYx"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var_str = \"Python Programming\"\n",
+        "var_str.replace(\"Python\", \"Java\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "id": "h0hPKZnbRxII",
+        "outputId": "c8b4fdd9-829a-4933-ad74-8db39d8c4d88"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            },
+            "text/plain": [
+              "'Java Programming'"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 45
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var_str = \"India is my country\"\n",
+        "var_str.replace(\"country\", \"nation\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "id": "W0jKPD2hSN7v",
+        "outputId": "c667953d-d921-4c48-8723-60c865d99661"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            },
+            "text/plain": [
+              "'India is my nation'"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 46
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# rfind(__sub: str, __start: SupportsIndex | None = ..., __end: SupportsIndex | None = ...) -> int\n",
+        "S.rfind(sub[, start[, end]]) -> int\n",
+        "\n",
+        "Return the highest index in S where substring sub is found, such that sub is contained within S[start:end].  Optional arguments start and end are interpreted as in slice notation.\n",
+        "\n",
+        "Return -1 on failure."
+      ],
+      "metadata": {
+        "id": "cy6AhDpIXKt3"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var_str = \"Yada Yada Hi Dharmasya\"\n",
+        "var_str.rfind(\"Hi\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Z1Afhig4W9Vf",
+        "outputId": "02911e0e-ba3d-4d79-f1ba-9ffb318405f5"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "10"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 47
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var_str = \"Peppa pig prefer to play with python programming\"\n",
+        "var_str.rfind(\"play\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Uy1bYdu3Xhhb",
+        "outputId": "8ebad243-e34a-496c-8a2e-c0cd54b50f9b"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "20"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 48
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var_str = \"Peppa pig prefer to play with python programming\"\n",
+        "var_str.rindex(\"python\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "y5uIYc5DXwc8",
+        "outputId": "ab44126e-0a22-4536-9478-6d7b984257a8"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "30"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 49
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# rindex(__sub: str, __start: SupportsIndex | None = ..., __end: SupportsIndex | None = ...) -> int\n",
+        "S.rfind(sub[, start[, end]]) -> int\n",
+        "\n",
+        "Return the highest index in S where substring sub is found, such that sub is contained within S[start:end].  Optional arguments start and end are interpreted as in slice notation.\n",
+        "\n",
+        "Return -1 on failure."
+      ],
+      "metadata": {
+        "id": "_thx7A4VYFMp"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var_str = \"Yada Yada Hi Dharmasya\"\n",
+        "var_str.rfind(\"Dharmasya\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "MJ6BA7paX84y",
+        "outputId": "9d3faf68-5736-4463-c576-295e03724686"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "13"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 52
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# rjust(__width: SupportsIndex, __fillchar: str = ...) -> str\n",
+        "Return a right-justified string of length width.\n",
+        "\n",
+        "Padding is done using the specified fill character (default is a space)."
+      ],
+      "metadata": {
+        "id": "UVOrGKdzYsau"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var_str = \"I love python programming\"\n",
+        "var_str.rjust(80)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "id": "ACdAalNmYP1-",
+        "outputId": "e5ca84c8-dd11-4f93-d29c-81018fa5840f"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            },
+            "text/plain": [
+              "'                                                       I love python programming'"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 53
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var_str = \"python programming\"\n",
+        "var_str.rjust(40)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "id": "xHtviCA7Ye_s",
+        "outputId": "7d3f3c82-2232-4820-dde1-739f3092d8ff"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            },
+            "text/plain": [
+              "'                      python programming'"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 56
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# rpartition(__sep: str) -> Tuple[str, str, str]\n",
+        "Partition the string into three parts using the given separator.\n",
+        "\n",
+        "This will search for the separator in the string, starting at the end. If\n",
+        "the separator is found, returns a 3-tuple containing the part before the\n",
+        "separator, the separator itself, and the part after it.\n",
+        "\n",
+        "If the separator is not found, returns a 3-tuple containing two empty strings\n",
+        "and the original string."
+      ],
+      "metadata": {
+        "id": "BTeqSv2Wea3d"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var_str = \"I love python programming. I live python programming.\"\n",
+        "\n",
+        "var_str.rpartition(\"python\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "iI6xIZBBcq-x",
+        "outputId": "b7eadf5b-6d6f-4aa5-def6-758bd30d677e"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "('I love python programming. I live ', 'python', ' programming.')"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 57
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# rsplit(sep: str | None = ..., maxsplit: SupportsIndex = ...) -> list[str]\n",
+        "Return a list of the words in the string, using sep as the delimiter string.\n",
+        "\n",
+        "  sep\n",
+        "    The delimiter according which to split the string.\n",
+        "None (the default value) means split according to any whitespace,\n",
+        "and discard empty strings from the result.\n",
+        "  maxsplit\n",
+        "    Maximum number of splits to do.\n",
+        "-1 (the default value) means no limit.\n",
+        "\n",
+        "Splits are done starting at the end of the string and working to the front.\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "YO2vqZ-0fEXm"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var_str = \"I, love, python, programming\"\n",
+        "var_str.rsplit(\", \")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "UptXmThZeegx",
+        "outputId": "ab21a128-1af9-4979-a960-115f39d38b3f"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "['I', 'love', 'python', 'programming']"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 58
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var_str = \"Peppa pig prefer to play with python programming\"\n",
+        "var_str.rsplit(\" \")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "K41oJxZHfhRD",
+        "outputId": "124dcbe3-9ab1-4669-cb05-4c65da43182a"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "['Peppa', 'pig', 'prefer', 'to', 'play', 'with', 'python', 'programming']"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 59
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var_str = \"     python     \"\n",
+        "var_str.rstrip()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "id": "QvpF30qEf4Sb",
+        "outputId": "0fdb5bef-441b-4717-f5a0-a005f2a67645"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            },
+            "text/plain": [
+              "'     python'"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 60
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# rstrip(__chars: str | None = ...) -> str\n",
+        "Return a copy of the string with trailing whitespace removed.\n",
+        "\n",
+        "If chars is given and not None, remove characters in chars instead."
+      ],
+      "metadata": {
+        "id": "FvQVXCSLgctc"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var_str = \"     python     \"\n",
+        "var_str.rstrip()"
+      ],
+      "metadata": {
+        "id": "8x0GnpLKgGFC",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "outputId": "7b050442-7f91-4fa4-8d6c-2b019397252e"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            },
+            "text/plain": [
+              "'     python'"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 61
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var_str = \"     python programming     \"\n",
+        "var_str.rstrip()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "id": "eqzTCKkugVkB",
+        "outputId": "1ca3a84a-3011-474d-f1a0-2cb76d7458f8"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            },
+            "text/plain": [
+              "'     python programming'"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 62
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# split(sep: str | None = ..., maxsplit: SupportsIndex = ...) -> list[str]\n",
+        "Return a list of the words in the string, using sep as the delimiter string.\n",
+        "\n",
+        "sep\n",
+        "  The delimiter according which to split the string.\n",
+        "None (the default value) means split according to any whitespace, and discard empty strings from the result.\n",
+        "maxsplit \n",
+        "  Maximum number of splits to do.\n",
+        "-1 (the default value) means no limit."
+      ],
+      "metadata": {
+        "id": "yXuxMaovhAPa"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var_str = \"welcome to the world of python programming\"\n",
+        "var_str.split()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "qoZTs7_5glgd",
+        "outputId": "eb85003e-1a53-41f0-d928-37c2fb4e1d82"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "['welcome', 'to', 'the', 'world', 'of', 'python', 'programming']"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 63
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var_str = \"python programming\"\n",
+        "var_str.split()"
+      ],
+      "metadata": {
+        "id": "nOXZvA3Ig2PC",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "e00c0ded-692b-494c-9052-a5ed06fbb83b"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "['python', 'programming']"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 64
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# startswith(__prefix: str | Tuple[str, ...], __start: SupportsIndex | None = ..., __end: SupportsIndex | None = ...) -> bool\n",
+        "S.startswith(prefix[, start[, end]]) -> bool\n",
+        "\n",
+        "Return True if S starts with the specified prefix, False otherwise. With optional start, test S beginning at that position. With optional end, stop comparing S at that position. prefix can also be a tuple of strings to try."
+      ],
+      "metadata": {
+        "id": "l2D5ohiziHSU"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var_str = \"Hello, I am Alexa.\"\n",
+        "var_str.startswith(\"Hello\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "cQNMNogzhGuJ",
+        "outputId": "49d1e735-302f-4925-f970-a5a13320fa91"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "True"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 65
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var_str = \"Hello, I am Alexa.\"\n",
+        "var_str.startswith(\"hello\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "cM-CNAtKh3-Z",
+        "outputId": "24c60318-2d95-4aa0-fe50-143d9e6f6e54"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "False"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 66
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var_str = \"Hello, I am Alexa.\"\n",
+        "var_str.startswith(\"Alexa\", 12,17)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "SKa26dwgh8zt",
+        "outputId": "c1b18ed2-a359-43ee-9bd1-c46a7a73ea80"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "True"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 67
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var_str = \"I love Python Programming\"\n",
+        "var_str.startswith(\"Python\", 7, 12)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "2b4jHA36ihXg",
+        "outputId": "c8dbb00d-2ace-4670-d82d-3d72ba62c5df"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "False"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 68
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# strip(__chars: str | None = ...) -> str\n",
+        "Return a copy of the string with leading and trailing whitespace removed.\n",
+        "\n",
+        "If chars is given and not None, remove characters in chars instead."
+      ],
+      "metadata": {
+        "id": "AU8wy82ijK8S"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var_str = \"         Python        \"\n",
+        "var_str.strip()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "id": "Zri3jTOHixBT",
+        "outputId": "a63cbf97-41c4-474d-c1a0-4d65952a64dc"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            },
+            "text/plain": [
+              "'Python'"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 69
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var_str = \"         Python        \"\n",
+        "x = var_str.strip()\n",
+        "print(\"I love\",x,\"programming\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "GRUS3UJKjTWx",
+        "outputId": "11a08145-d36c-4227-b6f6-e74010f2f576"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "I love Python programming\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# swapcase() -> str\n",
+        "\n",
+        "Convert uppercase characters to lowercase and lowercase characters to uppercase."
+      ],
+      "metadata": {
+        "id": "W2Gk097dkG2q"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var_str = \"python programming\"\n",
+        "var_str.swapcase()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "id": "j_8TOhuyjfyu",
+        "outputId": "a374150b-3317-4293-bba4-259c315bd2c0"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            },
+            "text/plain": [
+              "'PYTHON PROGRAMMING'"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 71
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var_str = \"PyThOn PrOgRaMmInG\"\n",
+        "var_str.swapcase()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "id": "8a5YQYumj3X-",
+        "outputId": "17bfd266-2855-48ba-9197-fa07d6eba5fb"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            },
+            "text/plain": [
+              "'pYtHoN pRoGrAmMiNg'"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 72
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Title() -> str\n",
+        "Return a version of the string where each word is titlecased.\n",
+        "\n",
+        "More specifically, words start with uppercased characters and all remaining cased characters have lower case."
+      ],
+      "metadata": {
+        "id": "3o12YO_Xki4A"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var_str = \"i love python programming\"\n",
+        "var_str.title()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "id": "hn5yOS9fkQQz",
+        "outputId": "39c600b0-3f39-431e-e72a-fc5451ebbb2d"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            },
+            "text/plain": [
+              "'I Love Python Programming'"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 73
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var_str = \"i Love Python Programming\"\n",
+        "var_str.title()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "id": "bw24j8o4knso",
+        "outputId": "19e781d7-0de8-4dba-f92f-d834acf1e614"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            },
+            "text/plain": [
+              "'I Love Python Programming'"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 74
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# translate(__table: Mapping[int, int | str | None] | Sequence[int | str | None]) -> str\n",
+        "Replace each character in the string using the given translation table.\n",
+        "\n",
+        "  table\n",
+        "    Translation table, which must be a mapping of Unicode ordinals to\n",
+        "Unicode ordinals, strings, or None.\n",
+        "\n",
+        "The table must implement lookup/indexing via __getitem__, for instance a\n",
+        "dictionary or list.  If this operation raises LookupError, the character is\n",
+        "left untouched.  Characters mapped to None are deleted."
+      ],
+      "metadata": {
+        "id": "KFZJ0seklxVq"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "mydict = {83:  80}\n",
+        "var_str = \"Hello Sarika!\"\n",
+        "print(var_str.translate(mydict))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "G4vBC61dkz45",
+        "outputId": "807e206b-afd9-4a85-8ed6-16bd78615301"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hello Parika!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var_str.translate({83:80})"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "id": "b3fHCc-Vln_Q",
+        "outputId": "1871d8e2-38c4-49c6-870d-662bbbc73819"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            },
+            "text/plain": [
+              "'Hello Parika!'"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 76
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# upper() -> str\n",
+        "\n",
+        "Return a copy of the string converted to uppercase."
+      ],
+      "metadata": {
+        "id": "_JZG6oVtmJsg"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var_str = \"python programming\"\n",
+        "var_str.upper()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "id": "Er9y2FJ_l8kq",
+        "outputId": "72554be8-bdca-439a-e168-d11d8255b6bc"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            },
+            "text/plain": [
+              "'PYTHON PROGRAMMING'"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 77
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# zfill(__width: SupportsIndex) -> str\n",
+        "Pad a numeric string with zeros on the left, to fill a field of the given width.\n",
+        "\n",
+        "The string is never truncated."
+      ],
+      "metadata": {
+        "id": "AAfrNBvPmtn9"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var_str = \"Python Programming\"\n",
+        "var_str.zfill(24)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "id": "0jR_mhzomOv_",
+        "outputId": "13894646-6e56-49cd-9ce4-dca010d738ec"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            },
+            "text/plain": [
+              "'000000Python Programming'"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 78
+        }
+      ]
+    }
+  ]
+}

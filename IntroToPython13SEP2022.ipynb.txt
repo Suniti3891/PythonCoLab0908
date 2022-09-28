@@ -1,0 +1,945 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "collapsed_sections": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "code",
+      "source": [
+        "str1 = 'I am a Python Programmer.'\n",
+        "str1"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 36
+        },
+        "id": "r5lYoXqFKEXt",
+        "outputId": "37f82de7-7138-4029-e852-66e84c369813"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'I am a Python Programmer.'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 5
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "str1[0],str1[1],str1[2],str1[3],str1[4],str1[5],str1[6],str1[7],str1[8]"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "KGd5CuF1KMZD",
+        "outputId": "820b2dee-8333-43ed-c39f-251b0335ecac"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "('I', ' ', 'a', 'm', ' ', 'a', ' ', 'P', 'y')"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 10
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "str2 = \"Twinkle twinkle little star\"\n",
+        "str2\n",
+        "len(str2)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "WBwYEFkoLhzJ",
+        "outputId": "d66fc98b-646f-47ef-fa2d-d42a986f2b9a"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "27"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 14
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(str2[0],str2[1],str2[2],str2[3],str2[4],str2[5],str2[6],str2[7],str2[8],str2[9],str2[10],str2[11],str2[12],str2[13],str2[14],str2[15],str2[16],str2[17],str2[18],str2[19],str2[20],str2[21],str2[22],str2[23],str2[24],str2[25],str2[26])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Rue_7XtrMYm4",
+        "outputId": "0b29d8e6-fe0c-4a8d-8bc5-8d195c92e277"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "T w i n k l e   t w i n k l e   l i t t l e   s t a r\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "lst1 = ['apple','banana','cherry','dates','eggfruit','fig','grapes','honeyfruit','icefruit','jackfruit']\n",
+        "print(lst1)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "u9Gg0ZjOORtQ",
+        "outputId": "647c8b94-39d8-44a5-cbfe-f5ce4e976cba"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['apple', 'banana', 'cherry', 'dates', 'eggfruit', 'fig', 'grapes', 'honeyfruit', 'icefruit', 'jackfruit']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "lst1[0],lst1[1],lst1[2],lst1[3],lst1[4],lst1[5]"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "OXzSFe3MOh9v",
+        "outputId": "72423104-7b7f-409d-d0d9-02c5bdf41382"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "('apple', 'banana', 'cherry', 'dates', 'eggfruit', 'fig')"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 21
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "tup1 = ('apple','banana','cherry','dates','eggfruit','fig','grapes','honeyfruit','icefruit','jackfruit')\n",
+        "print(tup1)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "9Z-49oVLPrVf",
+        "outputId": "52aba219-5063-4dd2-9fa5-3085c873b7e5"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "('apple', 'banana', 'cherry', 'dates', 'eggfruit', 'fig', 'grapes', 'honeyfruit', 'icefruit', 'jackfruit')\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "tup1[0],tup1[1],tup1[2],tup1[3],tup1[4],tup1[5],tup1[6],tup1[7],tup1[8],tup1[9]"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "tWUuzzetPyle",
+        "outputId": "387734e3-ab82-4509-b8c5-d116e9ffa48a"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "('apple',\n",
+              " 'banana',\n",
+              " 'cherry',\n",
+              " 'dates',\n",
+              " 'eggfruit',\n",
+              " 'fig',\n",
+              " 'grapes',\n",
+              " 'honeyfruit',\n",
+              " 'icefruit',\n",
+              " 'jackfruit')"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 24
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "set1 = {'apple','banana','cherry','dates','eggfruit','fig','grapes','honeyfruit','icefruit','jackfruit'}\n",
+        "print(set1)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "AFNSd6C_QIF-",
+        "outputId": "07d30863-c790-4e30-b206-d47d2ca1fa3e"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{'banana', 'cherry', 'honeyfruit', 'fig', 'eggfruit', 'jackfruit', 'icefruit', 'apple', 'grapes', 'dates'}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "set1[0]"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 165
+        },
+        "id": "Ehnp-enNQNRW",
+        "outputId": "13a87e1e-83bb-49b0-9eef-35801406da53"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "TypeError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-26-c38563f1af7a>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0mset1\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;36m0\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+            "\u001b[0;31mTypeError\u001b[0m: 'set' object is not subscriptable"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "dict1 = {'a':'apple','b':'banana','c':'cherry','d':'dates'}"
+      ],
+      "metadata": {
+        "id": "EsNAVBJuQkdh"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "dict1['a']"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 36
+        },
+        "id": "IX_dfeoUQygm",
+        "outputId": "3d548d4a-fb0a-4601-fd79-f58018e8edf0"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'apple'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 29
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "str1 = 'I am a Python Programmer'"
+      ],
+      "metadata": {
+        "id": "EEeVIFjMRsoX"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "str1[2:4]\n",
+        "\n",
+        "# element1 =\n",
+        "# element2 = (n-1) => n=4"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 36
+        },
+        "id": "uLcd1pu4R1m6",
+        "outputId": "9cb0d88f-f3c2-4cd9-ec85-ba67cdb24abc"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'am'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 36
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "str1[7:13]"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 36
+        },
+        "id": "DJK8OczsSQwn",
+        "outputId": "db4bf6ef-37e4-44f1-8745-acc7e594f0bf"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'Python'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 37
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "str1[14:24]"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 36
+        },
+        "id": "5o78Z7ApThA0",
+        "outputId": "b15975fd-3b39-44db-f2e0-08adca14687d"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'Programmer'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 38
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "lst1 = ['apple','banana','cherry','dates','eggfruit','fig','grapes','honeyfruit','icefruit','jackfruit']"
+      ],
+      "metadata": {
+        "id": "4dcXusxmTlPs"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "lst1[0:4]"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "YhaRKiHUTyq3",
+        "outputId": "488d648f-4f1d-4abe-b266-d0e228f20c27"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "['apple', 'banana', 'cherry', 'dates']"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 39
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "lst1[2:6]"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "zDva7hRPT4G8",
+        "outputId": "f77a3caf-a964-4a81-89e6-fb5c5eb7e012"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "['cherry', 'dates', 'eggfruit', 'fig']"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 40
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "lst1[6:10]"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Z6r81GDiUF7s",
+        "outputId": "678e8452-8fa5-4b44-d812-14464b36e642"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "['grapes', 'honeyfruit', 'icefruit', 'jackfruit']"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 41
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "lst1[:]"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "2vpF4iqkUUlp",
+        "outputId": "0c2ad8a0-cbdc-4e94-9b12-7202c02cd66a"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "['apple',\n",
+              " 'banana',\n",
+              " 'cherry',\n",
+              " 'dates',\n",
+              " 'eggfruit',\n",
+              " 'fig',\n",
+              " 'grapes',\n",
+              " 'honeyfruit',\n",
+              " 'icefruit',\n",
+              " 'jackfruit']"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 42
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "lst1[15]"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 165
+        },
+        "id": "8VZUgcbQUcPF",
+        "outputId": "32a9d22d-c5d0-472c-9aa6-f1f61e71e6d9"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "IndexError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mIndexError\u001b[0m                                Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-43-53e4bad1b7ae>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0mlst1\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;36m15\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+            "\u001b[0;31mIndexError\u001b[0m: list index out of range"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "lst1[0:15]"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "GuRkZpu3UpCe",
+        "outputId": "6c4c5b02-a312-4a08-c798-ebeb880b8a84"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "['apple',\n",
+              " 'banana',\n",
+              " 'cherry',\n",
+              " 'dates',\n",
+              " 'eggfruit',\n",
+              " 'fig',\n",
+              " 'grapes',\n",
+              " 'honeyfruit',\n",
+              " 'icefruit',\n",
+              " 'jackfruit']"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 44
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "lst1"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "z1DWEKpWVOvM",
+        "outputId": "6827cc26-d336-4d09-f2e6-582a3869d81b"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "['apple',\n",
+              " 'banana',\n",
+              " 'cherry',\n",
+              " 'dates',\n",
+              " 'eggfruit',\n",
+              " 'fig',\n",
+              " 'grapes',\n",
+              " 'honeyfruit',\n",
+              " 'icefruit',\n",
+              " 'jackfruit']"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 45
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "lst1[::]"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "FIi7bU9VVRec",
+        "outputId": "a43bbec7-1dda-4ea6-e4fc-92d71045da0e"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "['apple',\n",
+              " 'banana',\n",
+              " 'cherry',\n",
+              " 'dates',\n",
+              " 'eggfruit',\n",
+              " 'fig',\n",
+              " 'grapes',\n",
+              " 'honeyfruit',\n",
+              " 'icefruit',\n",
+              " 'jackfruit']"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 46
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(lst1[::])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "4qx2Vsj3ViXk",
+        "outputId": "b6babb8a-3282-482b-8a36-ccd3043a3030"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['apple', 'banana', 'cherry', 'dates', 'eggfruit', 'fig', 'grapes', 'honeyfruit', 'icefruit', 'jackfruit']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(lst1[::])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "su3yqfnxVoF7",
+        "outputId": "9144ce77-3a0c-4524-e639-2d2f47b805b8"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['jackfruit', 'icefruit', 'honeyfruit', 'grapes', 'fig', 'eggfruit', 'dates', 'cherry', 'banana', 'apple']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(lst1[::2])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "H863r0KCVw1r",
+        "outputId": "78fbe64e-5ce2-48be-ae97-3ebf2038a108"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['apple', 'cherry', 'eggfruit', 'grapes', 'icefruit']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(lst1[::3])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "zJ4QrIzDV2Bb",
+        "outputId": "83e242bd-1deb-4671-efdb-01ebbb111541"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['apple', 'dates', 'grapes', 'jackfruit']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(lst1[::6])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "kiE30a4hWZFr",
+        "outputId": "19eb17b8-f6f8-4f12-cc13-c6da7bac0958"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['apple', 'grapes']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "1. Default value of 1st element is always 0 (smallest value).\n",
+        "2. Default value of 2nd element is always position of last element (largest value).\n",
+        "3. Default value of 3rd element is always 1. moving from left to right.\n",
+        "4. element 2 and 3 follow rule n-1.\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "RdOKFe2wWrGl"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "lst1[::-1]"
+      ],
+      "metadata": {
+        "id": "uGQ0T_iJWomb"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Negative Indexing\n",
+        "\n",
+        "1. Default value of 1st element is largest value.\n",
+        "2. Default value of 2nd element is smallest one.\n",
+        "3. in case of negative indexing value of 3rd element is -1"
+      ],
+      "metadata": {
+        "id": "8fhGKUllZXep"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(lst1[-1:-11:-1])\n",
+        "print(lst1[-2:-11:-1])\n",
+        "print(lst1[-3:-11:-1])\n",
+        "print(lst1[-4:-11:-1])\n",
+        "print(lst1[-5:-11:-1])\n",
+        "print(lst1[-6:-11:-1])\n",
+        "print(lst1[-7:-11:-1])\n",
+        "print(lst1[-1:-11:-1])\n",
+        "print(lst1[-1:-10:-1])\n",
+        "print(lst1[-1:-9:-1])\n",
+        "print(lst1[-1:-8:-1])\n",
+        "print(lst1[-1:-7:-1])\n",
+        "print(lst1[-1:-6:-1])\n",
+        "print(lst1[-1:-5:-1])\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "KK3Yj3MmZ1t5",
+        "outputId": "706eab97-b7da-4e92-ea19-5f853064ef66"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['jackfruit', 'icefruit', 'honeyfruit', 'grapes', 'fig', 'eggfruit', 'dates', 'cherry', 'banana', 'apple']\n",
+            "['icefruit', 'honeyfruit', 'grapes', 'fig', 'eggfruit', 'dates', 'cherry', 'banana', 'apple']\n",
+            "['honeyfruit', 'grapes', 'fig', 'eggfruit', 'dates', 'cherry', 'banana', 'apple']\n",
+            "['grapes', 'fig', 'eggfruit', 'dates', 'cherry', 'banana', 'apple']\n",
+            "['fig', 'eggfruit', 'dates', 'cherry', 'banana', 'apple']\n",
+            "['eggfruit', 'dates', 'cherry', 'banana', 'apple']\n",
+            "['dates', 'cherry', 'banana', 'apple']\n",
+            "['jackfruit', 'icefruit', 'honeyfruit', 'grapes', 'fig', 'eggfruit', 'dates', 'cherry', 'banana', 'apple']\n",
+            "['jackfruit', 'icefruit', 'honeyfruit', 'grapes', 'fig', 'eggfruit', 'dates', 'cherry', 'banana']\n",
+            "['jackfruit', 'icefruit', 'honeyfruit', 'grapes', 'fig', 'eggfruit', 'dates', 'cherry']\n",
+            "['jackfruit', 'icefruit', 'honeyfruit', 'grapes', 'fig', 'eggfruit', 'dates']\n",
+            "['jackfruit', 'icefruit', 'honeyfruit', 'grapes', 'fig', 'eggfruit']\n",
+            "['jackfruit', 'icefruit', 'honeyfruit', 'grapes', 'fig']\n",
+            "['jackfruit', 'icefruit', 'honeyfruit', 'grapes']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(lst1[-1:-11:-1])\n",
+        "print(lst1[-1:-11:-2])\n",
+        "print(lst1[-1:-11:-3])\n",
+        "print(lst1[-1:-11:-4])\n",
+        "print(lst1[-1:-11:-5])\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "8VIptw71a1pQ",
+        "outputId": "05b2e769-a051-4250-fe6b-8efb5288eefe"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['jackfruit', 'icefruit', 'honeyfruit', 'grapes', 'fig', 'eggfruit', 'dates', 'cherry', 'banana', 'apple']\n",
+            "['jackfruit', 'honeyfruit', 'fig', 'dates', 'banana']\n",
+            "['jackfruit', 'grapes', 'dates', 'apple']\n",
+            "['jackfruit', 'fig', 'banana']\n",
+            "['jackfruit', 'eggfruit']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(lst1[-2:-10:-1])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "m8ncCVIYcRaS",
+        "outputId": "7841d26c-0462-40d8-d3b3-d809d5410362"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['icefruit', 'honeyfruit', 'grapes', 'fig', 'eggfruit', 'dates', 'cherry', 'banana']\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
